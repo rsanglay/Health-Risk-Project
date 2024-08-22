@@ -1,89 +1,87 @@
-Health Risk Prediction
-Overview
+# Health Risk Prediction
+
+## Overview
+
 Health Risk Prediction is a machine learning-based web application designed to predict health risks such as heart disease, diabetes, and cancerous/non-cancerous tumors based on patient data. The application features a medical dashboard where risk levels are displayed, providing valuable insights for doctors and patients alike.
 
-Features
-Predictive Modeling: Utilizes Random Forest algorithm to predict the likelihood of health conditions.
-Medical Dashboard: Displays risk levels based on predictions for easy visualization.
-User Management: Separate logins for doctors and patients, with specific access levels.
-Hospital-Specific Data: Doctors can post new patient data and access information related to their hospital.
-Search Functionality: Allows doctors to search for patients based on hospital affiliation.
-Patient Access: Patients can view their own health data and request a callback from their doctor.
-Guest Mode: Provides dummy data views for users without an account.
-Technologies Used
-Frontend: Angular, TypeScript
-Backend: Python, FastAPI
-Machine Learning: Random Forest Algorithm
-Database: MongoDB (managed using Studio 3T)
-Deployment: Docker
-Setup Instructions
-Clone the Repository:
-git clone https://github.com/yourusername/health-risk-prediction.git
+## Features
+
+- **Predictive Modeling**: Utilizes Random Forest algorithm to predict the likelihood of health conditions.
+- **Medical Dashboard**: Displays risk levels based on predictions for easy visualization.
+- **User Management**: Separate logins for doctors and patients, with specific access levels.
+- **Hospital-Specific Data**: Doctors can post new patient data and access information related to their hospital.
+- **Search Functionality**: Allows doctors to search for patients based on hospital affiliation.
+- **Patient Access**: Patients can view their own health data and request a callback from their doctor.
+- **Guest Mode**: Provides dummy data views for users without an account.
+
+## Technologies Used
+
+- **Frontend**: Angular, TypeScript
+- **Backend**: Python, FastAPI
+- **Machine Learning**: Random Forest Algorithm
+- **Database**: MongoDB (managed using Studio 3T)
+- **Deployment**: Docker
+
+## Setup Instructions
+
+### Clone the Repository
+
+git clone https://github.com/yourusername/health-risk-prediction.git  
 cd health-risk-prediction
 
-Backend Setup:
-Ensure you have Python installed.
+### Backend Setup
 
-Create a virtual environment and activate it:
+1. Ensure you have Python installed.
+2. Create a virtual environment and activate it:  
+   python3 -m venv venv  
+   source venv/bin/activate  (On Windows use `venv\Scripts\activate`)
+3. Install dependencies:  
+   pip install -r requirements.txt
+4. Run the backend server:  
+   uvicorn app.main:app --reload
 
-python3 -m venv venv
-source venv/bin/activate (On Windows use venv\Scripts\activate)
+### Frontend Setup
 
-Install dependencies:
+1. Navigate to the `frontend` directory:  
+   cd frontend
+2. Install Node.js dependencies:  
+   npm install
+3. Run the Angular development server:  
+   ng serve or yarn start
+4. Open the app in your browser:  
+   http://localhost:4200
 
-pip install -r requirements.txt
+### Database Setup
 
-Run the backend server:
+1. Ensure you have Docker installed.
+2. Start the MongoDB container:  
+   docker-compose up -d
+3. Use Studio 3T or your preferred tool to manage and visualize MongoDB data.
 
-uvicorn app.main
---reload
+## Usage
 
-Frontend Setup:
-Navigate to the frontend directory:
+- **Doctor Login**:  
+  Doctors can log in to post new patient data and view risk predictions for their patients.  
+  They can search for patients within their hospital and access specific health insights.
 
-cd frontend
+- **Patient Login**:  
+  Patients can log in to view their personalized health risk data.  
+  They can request a callback from their assigned doctor.
 
-Install Node.js dependencies:
+- **Guest Access**:  
+  Guests can explore the application with dummy data to understand the functionality.
 
-npm install
+## Contributing
 
-Run the Angular development server:
-
-ng serve or yarn start
-
-Open the app in your browser:
-
-http://localhost:4200
-
-Database Setup:
-Ensure you have Docker installed.
-
-Start the MongoDB container:
-
-docker-compose up -d
-
-Use Studio 3T or your preferred tool to manage and visualize MongoDB data.
-
-Usage
-Doctor Login:
-Doctors can log in to post new patient data and view risk predictions for their patients.
-They can search for patients within their hospital and access specific health insights.
-
-Patient Login:
-Patients can log in to view their personalized health risk data.
-They can request a callback from their assigned doctor.
-
-Guest Access:
-Guests can explore the application with dummy data to understand the functionality.
-
-Contributing
 Contributions are welcome! Please open an issue or submit a pull request with your improvements or new features.
 
-License
+## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
+## Contact
+
 For any questions or feedback, feel free to reach out:
 
-Email: raazik78612@gmail.com
-GitHub: rsanglay
+- **Email**: raazik78612@gmail.com
+- **GitHub**: [rsanglay](https://github.com/rsanglay)

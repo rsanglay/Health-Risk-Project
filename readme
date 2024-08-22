@@ -1,10 +1,10 @@
 
-Health Risk Prediction
+# Health Risk Prediction
 
-Overview
+##Overview
 Health Risk Prediction is a machine learning-based web application designed to predict health risks such as heart disease, diabetes, and cancerous/non-cancerous tumors based on patient data. The application features a medical dashboard where risk levels are displayed, providing valuable insights for doctors and patients alike.
 
-Features
+##Features
 Predictive Modeling: Utilizes Random Forest algorithm to predict the likelihood of health conditions.
 Medical Dashboard: Displays risk levels based on predictions for easy visualization.
 User Management: Separate logins for doctors and patients, with specific access levels.
@@ -14,21 +14,22 @@ Patient Access: Patients can view their own health data and request a callback f
 Guest Mode: Provides dummy data views for users without an account.
 
 
-Technologies Used
+##Technologies Used
+
 Frontend: Angular, TypeScript
 Backend: Python, FastAPI
 Machine Learning: Random Forest Algorithm
 Database: MongoDB (managed using Studio 3T)
 Deployment: Docker
 
-Setup Instructions
+##Setup Instructions
 
-Clone the Repository:
+###Clone the Repository:
 
 git clone https://github.com/yourusername/health-risk-prediction.git
 cd health-risk-prediction
 
-Backend Setup:
+###Backend Setup:
 
 Ensure you have Python installed.
 Create a virtual environment and activate it:
@@ -36,15 +37,15 @@ Create a virtual environment and activate it:
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-Install dependencies:
+###Install dependencies:
 
 pip install -r requirements.txt
 
-Run the backend server:
+###Run the backend server:
 
 uvicorn app.main:app --reload
 
-Frontend Setup:
+###Frontend Setup:
 
 Navigate to the frontend directory:
 cd frontend
@@ -52,21 +53,22 @@ cd frontend
 Install Node.js dependencies:
 npm install
 
-Run the Angular development server:
+###Run the Angular development server:
 ng serve or yarn start
 
 Open the app in your browser:
 arduino
 http://localhost:4200
 
-Database Setup:
+###Database Setup:
 Ensure you have Docker installed.
 
-Start the MongoDB container:
+###Start the MongoDB container:
 docker-compose up -d
 
 Use Studio 3T or your preferred tool to manage and visualize MongoDB data.
-Usage
+
+##Usage
 
 Doctor Login:
 Doctors can log in to post new patient data and view risk predictions for their patients.
@@ -84,7 +86,7 @@ Contributions are welcome! Please open an issue or submit a pull request with yo
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
+##Contact
 For any questions or feedback, feel free to reach out:
 
 Email: raazik78612@gmail.com

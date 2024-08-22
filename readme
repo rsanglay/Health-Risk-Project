@@ -26,36 +26,36 @@ Health Risk Prediction is a machine learning-based web application designed to p
 
 ### Clone the Repository
 
-git clone https://github.com/yourusername/health-risk-prediction.git  
-cd health-risk-prediction
+1. git clone https://github.com/yourusername/health-risk-prediction.git
+2. cd health-risk-prediction
 
 ### Backend Setup
 
 1. Ensure you have Python installed.
-2. Create a virtual environment and activate it:  
-   python3 -m venv venv  
-   source venv/bin/activate  (On Windows use `venv\Scripts\activate`)
-3. Install dependencies:  
-   pip install -r requirements.txt
-4. Run the backend server:  
-   uvicorn app.main:app --reload
+2. Create a virtual environment and activate it:
+   - `python3 -m venv venv`
+   - `source venv/bin/activate`  (On Windows use `venv\Scripts\activate`)
+3. Install dependencies:
+   - `pip install -r requirements.txt`
+4. Run the backend server:
+   - `uvicorn app.main:app --reload`
 
 ### Frontend Setup
 
-1. Navigate to the `frontend` directory:  
-   cd frontend
-2. Install Node.js dependencies:  
-   npm install
-3. Run the Angular development server:  
-   ng serve or yarn start
-4. Open the app in your browser:  
-   http://localhost:4200
+1. Navigate to the `frontend` directory:
+   - `cd frontend`
+2. Install Node.js dependencies:
+   - `npm install`
+3. Run the Angular development server:
+   - `ng serve` or `yarn start`
+4. Open the app in your browser:
+   - `http://localhost:4200`
 
 ### Database Setup
 
 1. Ensure you have Docker installed.
-2. Start the MongoDB container:  
-   docker-compose up -d
+2. Start the MongoDB container:
+   - `docker-compose up -d`
 3. Use Studio 3T or your preferred tool to manage and visualize MongoDB data.
 
 ## Usage
